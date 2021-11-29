@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/desayun2/public_html/entregas/
-    - /bin/rsync -av public/ $DEPLOYPATH
+    - /bin/cp -R * public/ $DEPLOYPATH
