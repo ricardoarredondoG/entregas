@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/desayun2/public_html/entregas/
-    - /bin/rsync -a --exclude 'index.php' /home/desayun2/entregas/public/ $DEPLOYPATH
+    - /bin/rsync -a --exclude 'index.php' public/ $DEPLOYPATH
