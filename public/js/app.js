@@ -38181,8 +38181,18 @@ var render = function() {
                                       _vm._v(
                                         "  " +
                                           _vm._s(item.shipping.address_1) +
-                                          ", " +
-                                          _vm._s(item.shipping.state) +
+                                          ", "
+                                      ),
+                                      item.shipping.address_2 != ""
+                                        ? _c("p", [
+                                            _vm._v(
+                                              _vm._s(item.shipping.address_2) +
+                                                ", "
+                                            )
+                                          ])
+                                        : _vm._e(),
+                                      _vm._v(
+                                        _vm._s(item.shipping.state) +
                                           "\r\n                      "
                                       )
                                     ]
@@ -51102,8 +51112,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\administrador\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\administrador\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\entregass\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\entregass\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

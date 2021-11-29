@@ -57,7 +57,7 @@
                         <i class="far fa-clock text-primary pr-2"></i></i>{{meta_data.value}}
                       </div>
 
-                      <div class="p-2 bd-highlight"><i class="fas fa-map-marked text-primary pr-2"></i>  {{item.shipping.address_1}}, {{item.shipping.state}}
+                      <div class="p-2 bd-highlight"><i class="fas fa-map-marked text-primary pr-2"></i>  {{item.shipping.address_1}}, <p v-if="item.shipping.address_2 != ''">{{item.shipping.address_2}}, </p>{{item.shipping.state}}
                       </div>
                       <div class="p-2 bd-highlight" v-for="meta_data in item.meta_data" v-if="meta_data.key === 'fecha-de-entrega'">
 
